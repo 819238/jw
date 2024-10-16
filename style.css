@@ -12,16 +12,22 @@ a {
     color: rgb(26, 115, 232);
 }
 
-#page a:active {
+a {
+    transition: background-color 0.1s ease;
+}
+
+a:active {
     background-color: rgb(163, 152, 152);
 }
 
-#page a:visited {
-    background-color: rgb(163, 152, 152);
-}
 
 .backhome {
     text-align: right;
+    margin-top: 20px;
+}
+
+.backhome a, .backayatharian a {
+    background-color: white;
 }
 
 .backayatharian {
@@ -38,6 +44,7 @@ i.app {
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    align-items: center;
 }
 
 .header img {
@@ -46,8 +53,8 @@ i.app {
 
 .formayat {
     border: 1px solid black;
-    border-right: 1px;
-    border-left: 1px;
+    border-right: 0;
+    border-left: 0;
     padding: 20px;
 }
 
@@ -93,4 +100,8 @@ i.app {
 
 p.ayatt {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.containerleft {
+    font-size: 17px;
 }
